@@ -1,0 +1,19 @@
+INDEX VERSION 1.134
+C:\git_kdigital\jsp_workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1688465784.index
+\HelloWorld\src\main\java
+C:\git_kdigital\jsp_workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3322966481.index
+\JSP03_240112\src\main\java
+C:\git_kdigital\jsp_workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\746785356.index
+\Calculator\src\main\java
+C:\git_kdigital\jsp_workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1719538994.index
+\Calculator\src\main\java
+C:\git_kdigital\jsp_workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3305278288.index
+\JSP03_240112\src\main\java
+C:\git_kdigital\jsp_workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\708164229.index
+\JSP03_240112\src\main\java
+C:\git_kdigital\jsp_workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1443087142.index
+\JSPTest\src\main\java
+C:\git_kdigital\jsp_workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2101439843.index
+\HomeWork\src\main\java
+C:\git_kdigital\jsp_workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3683398734.index
+\JSPTest\src\main\java

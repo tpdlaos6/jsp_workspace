@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<!-- Latest compiled and minified CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+	
+	<!-- Latest compiled JavaScript -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+	<meta charset="UTF-8">
+	<title>ToDoApp</title>
+	<script>
+		function addItem(){
+			let todo=document.getElementById("item"); // input 태그 찾기
+			let list=document.getElementById("todolist"); // ul 태그 찾기
+			let listitem=document.createElement("li"); // li 태그 생성
+			listitem.className
+				="d-flex list-group-item list-group-item-action list-group-item-warning";
+			let xbtn=document.createElement("button"); // 버튼 생성
+			
+			xbtn.className="btn-close ms-auto"; // button 태그에 class 속성값 설정
+			
+			xbtn.onclick=function(e){
+				let pnode=e.target.parentNode; // 클릭한 x버튼의 부모(li태그) 찾기
+				list.removeChild(pnode); // ul 태그에서 li 태그 삭제
+			}
+			listitem.innerText=todo.value; // 입력한 값 li태그의 text로 설정
+			listitem.appendChild(xbtn); // li태그에 x버튼 추가
+			list.appendChild(listitem); // ul 요소에 li 요소 추가
+			// 입력칸 비우기 및 포커스 이동
+			todo.value=""; // input 태그 초기화
+			todo.focus(); // input 태그에 focus 추가
+			if (item.value==""){
+				alert("내용을 입력하세요");
+			}
+			
+		}
+	</script>
+	
+	</head>
+<body>
+	<div class="container bg-warning shadow mx-auto mt- p-5 w-5">
+		<h2>My ToDo App</h2>
+		<hr>
+		<div class="input-group">
+			<input id="item" class="form-control" type="text" placeholder="할일을 입력하세요..">
+			<button type="button" class="btn-primary" onclick="addItem()">할일 추가</button>
+		</div>
+		<hr>
+		<ul id="todolist" class="list-group"></ul>
+	</div>
+</body>
+</html>

@@ -1,0 +1,97 @@
+
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/**
+ * Servlet implementation class Register
+ */
+//해당 주소값 맞춰주기 -> 가상의 주소
+@WebServlet("/register")
+public class Register extends HttpServlet {
+   private static final long serialVersionUID = 1L;
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public Register() {
+        super();
+    }
+
+   /**
+    * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+    */
+   protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+      //post방식으로 처리할거라 여기는 빈칸 유지
+   }
+   
+   
+   //취미 출력해주기 위한 함수
+   public String printHobby(String[] hobby) {
+      String hb ="";   //배열안에 있는거 전부 입력할 변수
+      if(hobby == null) {   //취미 체크 안했을 경우 대비
+         hb = "취미가 없습니다.";
+         return hb;
+      }
+      for(String h : hobby) {   //체크한 취미 전부 넣어주기
+         hb += h+" ";
+      }
+      return hb; //반복문 통해 얻은 정보 리턴
+   }
+   
+   /**
+    * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+    */
+   
+   //join.jsp에서 post방식으로 작성하였기 때문에 해당 메서드 호출됨.
+   protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+      request.setCharacterEncoding("UTF-8");
+      response.setContentType("text/html; charset=utf-8");
+      PrintWriter out = response.getWriter();
+      
+      
+      //넘겨진 정보들 받아서 전부 변수에 저장하기 -> 기본 넘어올때 string타입으로 정보가 넘어옴
+      String id = request.getParameter("id");
+      String pw = request.getParameter("password");
+      String email = request.getParameter("email");
+      String name = request.getParameter("name");
+      String phone = request.getParameter("tel");
+      String job = request.getParameter("job");
+      String[] hobby = request.getParameterValues("hobby");
+      String address = request.getParameter("address");
+      String recepmail = request.getParameter("emailReception");
+      String picture  =request.getParameter("picture");
+      String pr = request.getParameter("who");
+      
+      //메일 수신여부 체크해서 띄울 메시지 정의
+      if(request.getParameter("emailReception")=="y") {
+         recepmail = "메일을 받습니다.";
+      }else {
+         recepmail = "메일을 안받습니다.";
+      }
+      
+
+      //받아온 정보 출력해주기 html 순서대로 작성하여 화면 보여주기
+      out.append("<html><head><title>회원가입 양식 확인</title></head>")
+      .append("<body><h2>입력된 정보</h2><hr>")
+      .append("<p>아이디 : "+id+"</p>")
+      .append("<p>패스워드 : "+pw+"</p>")
+      .append("<p>이메일 : "+email+"</p>")
+      .append("<p>이름 : "+name+"</p>")
+      .append("<p>전화번호 : "+phone+"</p>")
+      .append("<p>직업 : "+job+"</p>")
+      //밑에 취미는 위에서 받아온 취미 배열로된 정보를 parameter로 던져줘서 다시 string 타입으로 받아서 출력해주기
+      .append("<p>취미 : "+printHobby(hobby)+"</p>")
+      .append("<p>이메일 수신여부 : "+recepmail+"</p>")
+      .append("<p>파일명 : "+picture+"</p>")
+      .append("<p>자기소개글 : "+pr+"</p>")
+      .append("</body></html>");
+   }
+
+}
