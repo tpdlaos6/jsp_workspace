@@ -13,13 +13,13 @@ public class StudentDAO {
 	PreparedStatement pstmt;
 	
 	final String JDBC_DRIVER = "com.mysql.cj.jdbc.Driver";
-	final String JDBC_URL = "jdbc:h2:tcp://localhost/~/jwbookdb";
+//	final String JDBC_URL = "jdbc:h2:tcp://localhost/~/jwbookdb";
 	
 
 	public void open() {
 		try {
-			Class.forName(JDBC_DRIVER);
-			conn = DriverManager.getConnection(JDBC_URL,"jwbook","1234");
+			Class.forName("com.mysql.jdbc.Driver");
+			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/jwbookdb?useSSL=false", "jwbook", "1234");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

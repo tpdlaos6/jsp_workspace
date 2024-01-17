@@ -34,9 +34,11 @@ public class StudentController extends HttpServlet {
 	 * @see HttpServlet#service(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		request.setCharacterEncoding("utf-8");
 		String action = request.getParameter("action");
 		String view = "";
-		if(request.getParameter("action") == null) {
+		
+		if(action == null) {
 			getServletContext().getRequestDispatcher("/studentControl?action=list").forward(request, response);
 		}else {
 			switch(action) {
@@ -61,10 +63,11 @@ public class StudentController extends HttpServlet {
 	public String insert(HttpServletRequest request, HttpServletResponse response) {
 		Student s = new Student();
 		try {
-			BeanUtils.populate(s,request.getParameterMap());
-		} catch(Exception e) {
+			BeanUtils.populate(s, request.getParameterMap());
+		} catch (Exception e) {
 			e.printStackTrace();
-		} dao.insert(s);
+		} 
+		dao.insert(s);
 		return list(request, response);
 	}
 }

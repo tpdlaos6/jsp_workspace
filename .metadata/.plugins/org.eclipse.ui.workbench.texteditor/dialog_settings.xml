@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="productList"/>
+		<item key="selection" value="af"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
-			<item value="productlist"/>
-			<item value="product"/>
-			<item value="book"/>
-			<item value="jwbook"/>
-			<item value="value"/>
-			<item value="first"/>
+			<item value="af"/>
+			<item value="center"/>
+			<item value="cal"/>
+			<item value="css"/>
+			<item value="link"/>
+			<item value="등록"/>
+			<item value="web-app"/>
+			<item value="web=app"/>
+			<item value="web"/>
 			<item value="get"/>
-			<item value="post"/>
-			<item value="calc"/>
-			<item value="setN1"/>
-			<item value="php"/>
-			<item value="reque"/>
-			<item value="utf"/>
-			<item value="set"/>
-			<item value="ch05"/>
+			<item value="forw"/>
+			<item value="for"/>
+			<item value="fow"/>
+			<item value="fowa"/>
+			<item value="studentControl"/>
 		</list>
 		<list key="replacehistory">
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="807"/>
-		<item key="DIALOG_Y_ORIGIN" value="263"/>
+		<item key="DIALOG_X_ORIGIN" value="1551"/>
+		<item key="DIALOG_Y_ORIGIN" value="303"/>
 		<item key="DIALOG_WIDTH" value="322"/>
 		<item key="DIALOG_HEIGHT" value="396"/>
 		<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>
