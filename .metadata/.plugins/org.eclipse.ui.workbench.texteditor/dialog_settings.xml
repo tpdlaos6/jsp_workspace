@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="af"/>
+		<item key="selection" value="UpdateMem"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
-			<item value="af"/>
+			<item value="updatemem"/>
+			<item value="update"/>
+			<item value="datemember"/>
+			<item value="Update"/>
+			<item value="mDao"/>
+			<item value="회원등"/>
+			<item value="reid"/>
+			<item value="login"/>
+			<item value="main"/>
 			<item value="center"/>
-			<item value="cal"/>
-			<item value="css"/>
-			<item value="link"/>
-			<item value="등록"/>
-			<item value="web-app"/>
-			<item value="web=app"/>
-			<item value="web"/>
-			<item value="get"/>
-			<item value="forw"/>
-			<item value="for"/>
-			<item value="fow"/>
-			<item value="fowa"/>
-			<item value="studentControl"/>
+			<item value="input"/>
+			<item value="table"/>
+			<item value="size"/>
+			<item value="script"/>
+			<item value="email"/>
 		</list>
 		<list key="replacehistory">
 		</list>

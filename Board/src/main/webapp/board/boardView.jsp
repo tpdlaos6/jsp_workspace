@@ -36,13 +36,13 @@
 				</tr>
 			</table>
 			<br> <br> 
-			<input type="button" value="게시글 수정"
+			<input type="button" class="btn btn-primary" value="게시글 수정"
 				onclick="open_win('BoardServlet?command=board_check_pass_form&num=${board.num}', 'update')">
-			<input type="button" value="게시글 삭제"
+			<input type="button" class="btn btn-success" value="게시글 삭제"
 				onclick="open_win('BoardServlet?command=board_check_pass_form&num=${board.num}', 'delete')">
-			<input type="button" value="게시글 리스트"
+			<input type="button" class="btn btn-info" value="게시글 리스트"
 				onclick="location.href='BoardServlet?command=board_list'"> 
-			<input type="button" value="게시글 등록"
+			<input type="button" class="btn btn-danger" value="게시글 등록"
 				onclick="location.href='BoardServlet?command=board_write_form'">
 		</div>
 	</body>

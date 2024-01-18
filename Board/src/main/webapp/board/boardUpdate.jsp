@@ -39,7 +39,6 @@
 					<tr>
 						<th>내용</th>
 						<td><textarea cols="70" rows="15" name="content">${board.content}</textarea></td>
-						</td>
 					</tr>
 				</table>
 				<br>				

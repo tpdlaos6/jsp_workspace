@@ -22,8 +22,13 @@ function boardCheck(){
 }
 
 function open_win(url,name){
-	// url : 팝업창에 로딩할 주소, name : 팝업창 이름(이름이 없으면 팝업창이 계속 뜸)
-	window.open(url, name, "width=500, heght=230");
+	if(name=="delete"){
+		if(!confirm("삭제하시겠습니까?")){
+			return;
+		}
+	}
+	// url : 팝업창에 로딩할 주소, name : 팝업창 이름(이름이 없으면 팝업창이 계속 뜹니다.)
+	window.open(url,name,"width=500,height=230");
 }
 
 function passCheck(){
