@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -9,6 +10,8 @@
 	</head>
 	<body>
 		<h2>회원 수정</h2>
+		*표시는 필수입력항목입니다.
+		<br>
 		<form action="memberUpdate.do" method="post" name="frm">
 			<table>
 				<tr>
@@ -20,12 +23,12 @@
 					<td><input type="text" name="name" size="20" value="${mVo.name}" readonly></td>
 				</tr>
 				<tr>
-					<td>암 $nbsp; 호</td>
-					<td><input type="password" name="pwd" size="20">*</td>
+					<td>암호   *</td>
+					<td><input type="password" name="pwd" size="20"></td>
 				</tr>
 				<tr height="30">
-					<td width="80">암호 확인</td>
-					<td><input type="password" name="pwd_check" size="20">*</td>
+					<td width="80">암호 확인*</td>
+					<td><input type="password" name="pwd_check" size="20"></td>
 				</tr>
 				<tr>
 					<td>이메일</td>
@@ -49,7 +52,6 @@
 				<tr>
 					<td colspan="2" align="center">
 						<input type="submit" value="확인"	onclick="return joinCheck()">
-						$nbsp;$nbsp;$nbsp;$nbsp;$nbsp;
 						<input type="reset" value="취소">
 					</td>
 				</tr>
