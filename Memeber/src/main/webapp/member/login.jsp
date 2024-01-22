@@ -16,13 +16,13 @@
 					<td><input type="text" name="userid"></td>
 				</tr>
 				<tr>
-					<td>암 호</td>
+					<td>비밀번호</td>
 					<td><input type="password" name="pwd"></td>
 				</tr>
 				<tr>
 					<td colspan="2" align="center">
-					<input type="submit" value="로그인" onclick="return loginCheck()">
-					<input type="button" value="회원 가입" onclick="location.href='join.do'">
+						<input type="submit" value="로그인" onclick="return loginCheck()"> 						
+						<input type="button" value="회원가입" onclick="location.href='join.do'">
 					</td>
 				</tr>
 				<tr>

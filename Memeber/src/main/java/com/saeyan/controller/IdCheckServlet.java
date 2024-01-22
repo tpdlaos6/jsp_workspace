@@ -23,19 +23,19 @@ public class IdCheckServlet extends HttpServlet {
      */
     public IdCheckServlet() {
         super();
+        // TODO Auto-generated constructor stub
     }
 
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) 
-			throws ServletException, IOException {
-		String userid = request.getParameter("userid");
-		MemberDAO mDao = MemberDAO.getInstance();
-		int result = mDao.confirmID(userid);
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		String userid=request.getParameter("userid");
+		MemberDAO mDao=MemberDAO.getInstance();
+		int result=mDao.confirmID(userid);// id중복체크
 		request.setAttribute("userid", userid);
 		request.setAttribute("result", result);
-		RequestDispatcher dispatcher = request.getRequestDispatcher("member/idcheck.jsp");
+		RequestDispatcher dispatcher=request.getRequestDispatcher("member/idcheck.jsp");
 		dispatcher.forward(request, response);
 	}
 

@@ -7,6 +7,6 @@
 		<title>로그인</title>
 	</head>
 	<body>
-		<a href="login.do">로그인 페이지로 이동</a>
+		<a href="login.do">로그인</a>
 	</body>
 </html>

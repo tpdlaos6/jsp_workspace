@@ -5,6 +5,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 import com.saeyan.dto.ProductVO;
 
@@ -19,6 +20,8 @@ public class ProductDAO {
 		return instance;
 	}
 	
+	
+	//목록
 	public List<ProductVO> selectAllProducts(){
 		String sql="select * from product order by code desc";
 		List<ProductVO> list = new ArrayList<ProductVO>();
@@ -46,6 +49,9 @@ public class ProductDAO {
 		return list;
 	}
 	
+
+	
+	//등록
 	public void insertProduct(ProductVO pVo) {
 		String sql="insert into product values(product_seq.nextval,?,?,?,?)";
 		Connection conn=null;
@@ -65,6 +71,7 @@ public class ProductDAO {
 		}
 	}
 	
+	//글 보기
 	public ProductVO selectProductByCode(String code) {
 		String sql="select * from product where code=?";
 		ProductVO pVo=null;

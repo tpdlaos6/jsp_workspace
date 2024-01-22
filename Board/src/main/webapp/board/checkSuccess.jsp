@@ -4,17 +4,20 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>checkSuccess</title>
+		<title>비밀번호체크</title>
+		<script>
+			if(window.name=="update"){
+				//부모창에서 화면전환
+				window.opener.location.href="BoardServlet?command=board_update_form&num=${param.num}";
+			}else if(window.name=="delete"){
+				//부모창에서 화면전환
+				alert("삭제되었습니다.")
+				window.opener.location.href="BoardServlet?command=board_delete&num=${param.num}";
+			}
+			window.close(); //창닫기
+		</script>
 	</head>
 	<body>
-		<script type="text/javascript">
-			if(window.name == "update") {
-				window.opener.parent.location.href = "BoardServlet?command=board_update_form&num=${param.num}";
-			} else if (window.name == 'delete') {
-				alert('삭제되었습니다.');
-				window.opener.parent.location.href = "BoardServlet?command=board_delete&num=${param.num}";
-			}
-			window.close();
-		</script>
+	
 	</body>
 </html>

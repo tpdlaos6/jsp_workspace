@@ -22,25 +22,24 @@ public class LogoutServlet extends HttpServlet {
      */
     public LogoutServlet() {
         super();
+        // TODO Auto-generated constructor stub
     }
 
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) 
-			throws ServletException, IOException {
-		HttpSession session = request.getSession();
-		session.invalidate(); //session 비활성화=>session attribute도 소멸됨
-		RequestDispatcher dispatcher = request
-				.getRequestDispatcher("member/login.jsp");
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		HttpSession session=request.getSession(); //session객체구하기
+		session.invalidate(); //session비활성화 => session attribute 소멸
+		RequestDispatcher dispatcher=request.getRequestDispatcher("member/login.jsp");
 		dispatcher.forward(request, response);
 	}
 
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
-	protected void doPost(HttpServletRequest request, HttpServletResponse response)
-			throws ServletException, IOException {
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
 		doGet(request, response);
 	}
 
