@@ -3,10 +3,14 @@ C:\git_kdigital\jsp_workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsea
 \JSP03_240112\src\main\java
 C:\git_kdigital\jsp_workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4286902504.index
 \Product\src\main\java
+C:\git_kdigital\jsp_workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1767004994.index
+\NaverSearch\src\main\java
 C:\git_kdigital\jsp_workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3063045779.index
 \web-study-10\src
 C:\git_kdigital\jsp_workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3638135603.index
 \Memeber\src\main\java
+C:\git_kdigital\jsp_workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\477077584.index
+\WebSocketTest\src\main\java
 C:\git_kdigital\jsp_workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1688465784.index
 \HelloWorld\src\main\java
 C:\git_kdigital\jsp_workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2101439843.index
@@ -27,6 +31,8 @@ C:\git_kdigital\jsp_workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsea
 \Board\src\main\java
 C:\git_kdigital\jsp_workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3610375143.index
 \Shopping\src\main\java
+C:\git_kdigital\jsp_workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\227551862.index
+\Member\src\main\java
 C:\git_kdigital\jsp_workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3322966481.index
 \JSP03_240112\src\main\java
 C:\git_kdigital\jsp_workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1889839329.index
@@ -37,5 +43,7 @@ C:\git_kdigital\jsp_workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsea
 \Calculator\src\main\java
 C:\git_kdigital\jsp_workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1443087142.index
 \JSPTest\src\main\java
+C:\git_kdigital\jsp_workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4176496033.index
+\Member\src\main\java
 C:\git_kdigital\jsp_workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3683398734.index
 \JSPTest\src\main\java

@@ -12,7 +12,6 @@
     <fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
     <fullyQualifiedTypeName name="javax.servlet.http.HttpServletResponse"/>
     <fullyQualifiedTypeName name="javax.servlet.ServletException"/>
-    <fullyQualifiedTypeName name="java.io.IOException"/>
     <fullyQualifiedTypeName name="com.saeyan.controller.action.Action"/>
     <fullyQualifiedTypeName name="com.saeyan.controller.action.BoardWriteAction"/>
     <fullyQualifiedTypeName name="com.saeyan.controller.action.BoardWriteFormAction"/>
@@ -44,4 +43,14 @@
     <fullyQualifiedTypeName name="com.oreilly.servlet.MultipartRequest"/>
     <fullyQualifiedTypeName name="com.oreilly.servlet.multipart.DefaultFileRenamePolicy"/>
     <fullyQualifiedTypeName name="java.util.Map"/>
+    <fullyQualifiedTypeName name="java.util.Collections"/>
+    <fullyQualifiedTypeName name="java.util.Set"/>
+    <fullyQualifiedTypeName name="javax.websocket.Session"/>
+    <fullyQualifiedTypeName name="java.util.HashSet"/>
+    <fullyQualifiedTypeName name="javax.websocket.server.ServerEndpoint"/>
+    <fullyQualifiedTypeName name="javax.websocket.OnOpen"/>
+    <fullyQualifiedTypeName name="javax.websocket.OnMessage"/>
+    <fullyQualifiedTypeName name="java.io.IOException"/>
+    <fullyQualifiedTypeName name="javax.websocket.OnClose"/>
+    <fullyQualifiedTypeName name="javax.websocket.OnError"/>
 </qualifiedTypeNameHistroy>
