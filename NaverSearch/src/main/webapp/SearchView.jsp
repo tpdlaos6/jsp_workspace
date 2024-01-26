@@ -12,9 +12,9 @@
 		$(function() {
 		    $('#searchBtn').click(function() {
 		      $.ajax({
-		        url : "/NaverSearch/NaverSearchAPI.do",  // 요청 URL
-		        type : "get",                  // HTTP 메서드
-		        data : {                       // 매개변수로 전달할 데이터
+		        url : "/NaverSearch/NaverSearchAPI.do",  // 서버 주소 => .. 말고 절대경로로 지정할 것.
+		        type : "get",                  // HTTP 메서드 전송방식
+		        data : {                       // 서버로 전송하는 데이터
 		            keyword : $('#keyword').val(),                   // 검색어
 		            startNum : $('#startNum option:selected').val()  // 검색 시작 위치
 		        },

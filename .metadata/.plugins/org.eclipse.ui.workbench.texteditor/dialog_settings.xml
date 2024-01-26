@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="귓속"/>
+		<item key="selection" value="get"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="getmem"/>
+			<item value="get"/>
+			<item value="json"/>
+			<item value="url"/>
+			<item value="바로가기"/>
+			<item value="resp"/>
+			<item value="each"/>
 			<item value="귓속"/>
 			<item value="close"/>
 			<item value="chatwindow"/>
@@ -16,13 +23,6 @@
 			<item value="뷰에"/>
 			<item value="search"/>
 			<item value="sho"/>
-			<item value="upload"/>
-			<item value="jsp"/>
-			<item value="pdao"/>
-			<item value="instan"/>
-			<item value="5"/>
-			<item value="seq"/>
-			<item value="productlist"/>
 		</list>
 		<list key="replacehistory">
 		</list>
