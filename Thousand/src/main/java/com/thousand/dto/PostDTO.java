@@ -34,10 +34,10 @@ public class PostDTO {
 	private Timestamp postdate;		//게시글 작성 날짜
 	
 	
-	public int getNo() {
+	public int getpNo() {
 		return pno;
 	}
-	public void setNo(int pno) {
+	public void setpNo(int pno) {
 		this.pno = pno;
 	}
 	public String getId() {

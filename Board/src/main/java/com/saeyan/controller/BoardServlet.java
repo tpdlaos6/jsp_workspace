@@ -9,23 +9,17 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.saeyan.controller.action.Action;
 
-/**
- * Servlet implementation class BoardServlet
- */
+
 @WebServlet("/BoardServlet")
 public class BoardServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
-    /**
-     * @see HttpServlet#HttpServlet()
-     */
+
     public BoardServlet() {
         super();
     }
 
-	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
-	 */
+
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		//command 저장
 		String command = request.getParameter("command");
@@ -37,9 +31,7 @@ public class BoardServlet extends HttpServlet {
 		}
 	}
 
-	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
-	 */
+
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// 폼에 입력한 한글이 깨지지 않게 처리. 참고로 doGet에서는 깨지지 않음
 		request.setCharacterEncoding("UTF-8");
