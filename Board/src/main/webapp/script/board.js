@@ -20,21 +20,20 @@ function boardCheck(){
 		return false;
 	}
 }
-
 function open_win(url,name){
 	if(name=="delete"){
 		if(!confirm("삭제하시겠습니까?")){
 			return;
 		}
 	}
-	// url : 팝업창에 로딩할 주소, name : 팝업창 이름(이름이 없으면 팝업창이 계속 뜹니다.)
-	window.open(url,name,"width=500,height=230");
+	// url:팝업창에 로딩할 주소, name:팝업창이름(이름이 없으면 팝업창이 계속 뜹니다.)
+	window.open(url,name,"width=500,height=230");	
 }
-
-function passCheck(){
-	if (document.frm.pass.value.length == 0){
+function passCheck(){	
+	if(document.frm.pass.value.length==0){
 		alert("비밀번호를 입력하세요");
 		document.frm.pass.focus();
 		return false;
 	}
 }
+

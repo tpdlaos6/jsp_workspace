@@ -7,14 +7,15 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-public class BoardWriteFormAction implements Action {
+public class BoardWriteFormAction implements Action{
 
 	@Override
-	public void execute(HttpServletRequest request, HttpServletResponse response)
-			throws ServletException, IOException {
-		String url = "/board/boardWrite.jsp";
-		RequestDispatcher dispatcher = request.getRequestDispatcher(url);
+	public void execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		//등록화면으로 이동
+		String url="/board/boardWrite.jsp";
+		RequestDispatcher dispatcher=request.getRequestDispatcher(url);
 		dispatcher.forward(request, response);
+		
 	}
-	
+
 }

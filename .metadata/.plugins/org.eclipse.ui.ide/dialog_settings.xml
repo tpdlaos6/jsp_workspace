@@ -23,6 +23,7 @@
 		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\git_kdigital\jsp_workspace"/>
 			<item value="C:\git_kdigital\jsp_workspace\teamproject"/>
 			<item value="C:\Users\박한선\Desktop\teamproject"/>
 			<item value="C:\Users\박한선\Desktop\2537754056122F1F2F\web-study-10"/>

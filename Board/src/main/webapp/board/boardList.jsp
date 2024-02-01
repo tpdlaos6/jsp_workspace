@@ -36,13 +36,13 @@
 					<td>${board.readcount}</td>
 				</tr>
 				</c:forEach>
-			</table>
-			<!-- paging.start --------------------->
-			<div align="center">
-				${map.pagingString}	  
-			</div>
-			<!-- paging.end------------------------>
-			
+			</table>			
+			<!--  paging ------------------------------------------------------------------------------>
+	        <div align="center">	           
+	                ${map.pagingString}	            	            
+	        </div>
+	        <!--  paging.end -->
+		    
 		    <!-- 검색 폼 ------------------------------------------------->
 		    <form method="get">  
 		    	<!-- command를 숨겨서 넘김 -->
@@ -53,7 +53,6 @@
 			            <select name="searchField">
 			                <option value="title">제목</option>
 			                <option value="content">내용</option>
-							<!--제목+내용 동시검색도 한번 생각해서 코딩해볼 것-->
 			            </select>
 			            <input type="text" name="searchWord" />
 			            <input type="submit" value="검색하기" />

@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.Map;
 
 import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -18,14 +19,11 @@ import util.BoardPage;
 public class BoardListAction implements Action {
 
 	@Override
-	public void execute(HttpServletRequest request, HttpServletResponse response) 
-			throws ServletException, IOException {
-		String url = "/board/boardList.jsp";
-		BoardDAO bDao = BoardDAO.getInstance(); // dao 객체 생성
+	public void execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		String url="/board/boardList.jsp";
+		BoardDAO bDao=BoardDAO.getInstance();// dao객체생성			
 		
-		
-		
-		//페이징 처리
+		/* 페이징 처리 *****************************************************/
 		Map<String, Object> map = new HashMap<String, Object>();
 
         String searchField = request.getParameter("searchField");
@@ -36,13 +34,13 @@ public class BoardListAction implements Action {
             map.put("searchWord", searchWord);
         }
         int totalCount = bDao.selectCount(map);  // 게시물 개수
-		
-////////////페이지 처리 start/////////////////////////////
-        int pageSize = 10; // 페이지 당 글수
+
+        /* 페이지 처리 start */
+       
+        int pageSize = 10; // 페이지당 글수
         int blockPage = 5; // 목록 아랫쪽  페이지번호 수
 
-		
-		//현재 페이지 확인
+        // 현재 페이지 확인
         int pageNum = 1;  // 기본값
         String pageTemp = request.getParameter("pageNum");
         if (pageTemp != null && !pageTemp.equals(""))
@@ -53,9 +51,9 @@ public class BoardListAction implements Action {
         int end = pageNum * pageSize; // 마지막 게시물 번호
         map.put("start", start);
         map.put("end", end);
-////////////페이지 처리 end/////////////////////////////
-		
-		//뷰에 전달할 매개변수 추가
+        /* 페이지 처리 end */
+        
+        // 뷰에 전달할 매개변수 추가
         String pagingString="";
         if(searchWord!=null) {//검색하는 경우
         	pagingString = BoardPage.pagingStr(totalCount, pageSize,
@@ -68,16 +66,16 @@ public class BoardListAction implements Action {
         map.put("totalCount", totalCount);
         map.put("pageSize", pageSize);
         map.put("pageNum", pageNum);
+
+        // 전달할 데이터를 request 영역에 저장 후 List.jsp로 포워드        
+        request.setAttribute("map", map);
+		/* 페이징 처리.끝 */
 		
-		//전달할 데이터를 request영역에 저장 후, List.jsp로 포워드
-		request.setAttribute("map", map);
-		//////// 페이징 처리 끝 ////////
-		
-		List<BoardVO> boardList = bDao.selectListPage(map); // 목록 조회
+        List<BoardVO> boardList=bDao.selectListPage(map); // 목록조회
 		request.setAttribute("boardList", boardList); // view에 전달할 데이터
-		RequestDispatcher dispatcher = request.getRequestDispatcher(url);
-		dispatcher.forward(request, response); // 목록페이지로 이동. 주소변경 없음
+		RequestDispatcher dispatcher=request.getRequestDispatcher(url);
+		dispatcher.forward(request, response); // 목록페이지로 이동.주소변경없음
 		
 	}
-	
+
 }
