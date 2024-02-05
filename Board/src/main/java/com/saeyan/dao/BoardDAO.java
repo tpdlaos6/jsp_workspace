@@ -90,8 +90,7 @@ public class BoardDAO {
                      + "    select t.*, rownum rnum from ( "
                      + "        select * from board ";
 
-        if (map.get("searchWord") != null)
-        {
+        if (map.get("searchWord") != null){
             sql += " where " + map.get("searchField")
                    + " like '%" + map.get("searchWord") + "%' ";
         }
