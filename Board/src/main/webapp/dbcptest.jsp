@@ -18,7 +18,7 @@
 		Context envContext = (Context) initContext.lookup("java:/comp/env");
 		DataSource ds = (DataSource) envContext.lookup("jdbc/myoracle");
 		Connection conn = ds.getConnection();
-		out.println("DBCP 연동 성공했습니다.");
+		out.println("DBCP 연동 성공");
 	%>
 	</body>
 </html>
