@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="menu"/>
+		<item key="selection" value="insert"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
-			<item value="menu"/>
-			<item value="recent"/>
-			<item value="recently"/>
-			<item value="127"/>
-			<item value="1521"/>
-			<item value="-main&apos;"/>
-			<item value="main"/>
-			<item value="t"/>
-			<item value="bo"/>
-			<item value="rownum"/>
-			<item value="searchf"/>
-			<item value="searchword"/>
-			<item value="search"/>
-			<item value="list"/>
-			<item value="ㅣㅑㄴㅅ"/>
+			<item value="insert"/>
+			<item value="code"/>
+			<item value="&quot;post&quot;"/>
+			<item value="&apos;post&apos;"/>
+			<item value="frm"/>
+			<item value="postdate"/>
+			<item value="date"/>
+			<item value="작성"/>
+			<item value="등록"/>
+			<item value="contro"/>
+			<item value="sho"/>
+			<item value="shopp"/>
+			<item value="1234"/>
+			<item value="8081"/>
+			<item value="check"/>
 		</list>
 		<list key="replacehistory">
 			<item value="-main.png&apos;"/>
@@ -36,8 +36,8 @@
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="764"/>
-		<item key="DIALOG_Y_ORIGIN" value="152"/>
+		<item key="DIALOG_X_ORIGIN" value="1283"/>
+		<item key="DIALOG_Y_ORIGIN" value="169"/>
 		<item key="DIALOG_WIDTH" value="322"/>
 		<item key="DIALOG_HEIGHT" value="396"/>
 		<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>

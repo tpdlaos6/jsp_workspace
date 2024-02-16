@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="ch07.Calculator"/>
-    <fullyQualifiedTypeName name="java.sql.Date"/>
-    <fullyQualifiedTypeName name="java.sql.DriverManager"/>
     <fullyQualifiedTypeName name="org.apache.commons.beanutils.BeanUtils"/>
     <fullyQualifiedTypeName name="java.sql.Statement"/>
     <fullyQualifiedTypeName name="java.sql.SQLException"/>
@@ -51,7 +48,6 @@
     <fullyQualifiedTypeName name="java.util.Map"/>
     <fullyQualifiedTypeName name="java.util.HashMap"/>
     <fullyQualifiedTypeName name="java.net.URL"/>
-    <fullyQualifiedTypeName name="java.sql.Timestamp"/>
     <fullyQualifiedTypeName name="util.ThousandPage"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="com.thousand.dao.ThousandDAO"/>
@@ -60,4 +56,8 @@
     <fullyQualifiedTypeName name="com.thousand.dto.TodayReadcount"/>
     <fullyQualifiedTypeName name="com.thousand.dto.PostDTO"/>
     <fullyQualifiedTypeName name="com.thousand.dao.ThousandDAO.RecentlyViewList"/>
+    <fullyQualifiedTypeName name="com.saeyan.dto.DiaryVO"/>
+    <fullyQualifiedTypeName name="com.diary.dto.DiaryVO"/>
+    <fullyQualifiedTypeName name="com.diary.dao.DiaryDAO"/>
+    <fullyQualifiedTypeName name="java.sql.Timestamp"/>
 </qualifiedTypeNameHistroy>
